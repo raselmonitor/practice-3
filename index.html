@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-items: start;
+
+        } */
+        .box {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+            border: 5px solid darkgrey; */
+            display: grid;
+            grid-template-columns: 300px auto;
+            gap: 20px;
+            border: 3px solid darkgrey;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+
+        @media screen and (max-width: 576px) {
+            .box{
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div>
+                <h3>Content Title will be here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque enim ab culpa ipsa at minima dolore,
+                    iure fugiat dolores consectetur voluptates inventore expedita vel eos. Nam tempore, expedita aut
+                    dolorum
+                    earum sed quis praesentium enim quasi quaerat, cumque amet nihil, commodi quia officia impedit
+                    deserunt
+                    fugit explicabo iure architecto in. In ullam cum veniam voluptas a eaque, dolore eum nihil
+                    assumenda,
+                    saepe dignissimos deserunt magnam atque, ipsam totam nisi vitae. Saepe nobis consectetur, repellat
+                    officia molestiae possimus quasi assumenda! Id velit cupiditate corporis quas tempora eaque maiores
+                    in
+                    enim sed vitae, nam nihil modi doloribus nemo, quos voluptas iste explicabo. <br><br>
+                    <button>Read More</button>
+                </p>
+            </div>
+
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            <div>
+                <h3>Content Title will be here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque enim ab culpa ipsa at minima dolore,
+                    iure fugiat dolores consectetur voluptates inventore expedita vel eos. Nam tempore, expedita aut
+                    dolorum
+                    earum sed quis praesentium enim quasi quaerat, cumque amet nihil, commodi quia officia impedit
+                    deserunt
+                    fugit explicabo iure architecto in. In ullam cum veniam voluptas a eaque, dolore eum nihil
+                    assumenda,
+                    saepe dignissimos deserunt magnam atque, ipsam totam nisi vitae. Saepe nobis consectetur, repellat
+                    officia molestiae possimus quasi assumenda! Id velit cupiditate corporis quas tempora eaque maiores
+                    in
+                    enim sed vitae, nam nihil modi doloribus nemo, quos voluptas iste explicabo. <br> <br>
+                    <button>Read More</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
